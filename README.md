@@ -54,4 +54,61 @@ This system allows users to browse, book, and manage car rentals while providing
 ---
 
 ## 📂 Folder Structure
+project/
+│── admin/
+│── assets/
+│── includes/
+│── index.php
+│── car-listing.php
+│── search.php
+│── profile.php
+│── my-booking.php
+│── contact-us.php
+│── ...
+└── database.sql
+
+
+---
+
+## 🧰 Installation Guide (Localhost)
+
+### 1️⃣ Install XAMPP  
+Download & install: https://www.apachefriends.org/
+
+### 2️⃣ Move project to XAMPP
+Place your project inside:
+
+
+### 3️⃣ Import the Database
+1. Open **phpMyAdmin**
+2. Create a new database (example):
+
+
+3. Import `database.sql` from your project
+
+### 4️⃣ Start Apache & MySQL
+
+### 5️⃣ Run the Project  
+Open browser:
+
+
+---
+
+## 🌐 Deployment Guide (Free Hosting)
+
+### 🚀 Option 1: Deploy on **000WebHost** (FREE)
+
+1. Go to https://www.000webhost.com/  
+2. Create account → Create new site  
+3. Upload all your files to `/public_html/`  
+4. Create a new database  
+5. Import `database.sql`  
+6. Update `includes/config.php` with new DB credentials:
+
+```php
+$host = "localhost";
+$user = "your_db_user";
+$pass = "your_db_password";
+$db   = "your_db_name";
+
 
